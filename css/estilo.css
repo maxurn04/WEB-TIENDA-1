@@ -5,3 +5,24 @@
 .fuente-palabras{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+.movimiento-inicio-sesion{
+    text-align: right;
+    padding-top: 50px;
+}
+
+.caja-gris{
+    background-color: rgb(243, 243, 243);
+    padding: 30px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.caja-peque{
+    background-color: white; 
+    border: 1px;
+    padding: 20px;
+    height: 240px; 
+    text-align: center;
+    margin-bottom: 35px;
+}
