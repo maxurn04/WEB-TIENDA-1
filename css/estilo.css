@@ -34,8 +34,7 @@
 }
 
 .contenedor-boton{
-    margin-top: auto;          
-          
+    margin-top: auto;              
 }
 
 .ajuste-letras-bloque{
@@ -51,4 +50,12 @@
 .fuente-palabras-slim{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
+}
+
+.enlaces-footer{
+    margin-bottom: 10px;
+}
+
+.columna-der-footer{
+    text-align: right;
 }
