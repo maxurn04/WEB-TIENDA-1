@@ -3,7 +3,8 @@
 }
 
 .fuente-palabras{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .movimiento-inicio-sesion{
@@ -25,4 +26,29 @@
     height: 240px; 
     text-align: center;
     margin-bottom: 35px;
+}
+
+.cuadrado-grande{
+    display: flex;
+    flex-direction: column; 
+}
+
+.contenedor-boton{
+    margin-top: auto;          
+          
+}
+
+.ajuste-letras-bloque{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.ajuste-letras-bloque-der{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.fuente-palabras-slim{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
 }
