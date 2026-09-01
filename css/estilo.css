@@ -76,7 +76,6 @@
     text-align: right;
 }
 
-<<<<<<< HEAD
 .logoContactoCaja{
   display: flex;
   align-items: center; 
@@ -100,7 +99,6 @@
     padding: 4%;
     
 }
-=======
 .caja-registro{
     background-color: #e5e5e5;
     border: 5px solid #000000;
@@ -125,4 +123,3 @@
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
->>>>>>> f09cd7c87bd8525e08ae794cd2e5effec4871165
