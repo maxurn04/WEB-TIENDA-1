@@ -59,3 +59,9 @@
 .columna-der-footer{
     text-align: right;
 }
+
+.caja-registro{
+    background-color: #e5e5e5;
+    border: 5px solid #000000;
+    margin-top: 40px;
+}
