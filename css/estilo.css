@@ -2,6 +2,10 @@
     background-color: gray;
 }
 
+.navbar-estilo{
+    border-bottom: 3px solid black;
+}
+
 .fuente-palabras{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -56,10 +60,23 @@
     margin-bottom: 10px;
 }
 
+.footer-estilo{
+    background-color: rgb(255, 255, 255);
+     border-top: 3px solid rgb(0, 0, 0); 
+     padding-top: 20px
+}
+
+.boton-footer{
+    border-radius: 1px;
+    padding: 1px 15px; 
+    margin-bottom: 4px;
+}
+
 .columna-der-footer{
     text-align: right;
 }
 
+<<<<<<< HEAD
 .logoContactoCaja{
   display: flex;
   align-items: center; 
@@ -83,3 +100,29 @@
     padding: 4%;
     
 }
+=======
+.caja-registro{
+    background-color: #e5e5e5;
+    border: 5px solid #000000;
+    margin-top: 40px;
+}
+
+.boton-reini{
+    border: 2px solid #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.boton-reini:hover{
+    background-color: #303030;
+    color: #ffffff;
+}
+
+.boton-colores-inicio{
+    background-color: #007bff;
+    border: 3px solid #015dbe; 
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+>>>>>>> f09cd7c87bd8525e08ae794cd2e5effec4871165

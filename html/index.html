@@ -9,21 +9,19 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="fondo-color">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-estilo">
     <div class="container-fluid">
-        <a class="navbar-brand fuente-palabras" style="font-family: comic sans ms; font-weight:bolder" href="../html/index.html">TIENDA</a>
+        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/ejemploemplesa.png" alt="imgEmpresa" class="img-fluid" style="width: 105px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Menú
-            </a>
+                </a>
+            
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../html/index.html">Home</a></li>
                 <li><a class="dropdown-item" href="../html/productos.html">Productos</a></li>
@@ -42,16 +40,16 @@
     </nav>
 
     <div class="movimiento-inicio-sesion container">
-        <a class = "fuente-palabras " href="">Iniciar Sesion</a> | <a class = "fuente-palabras"href="">Registrar Usuario</a>
+        <a class = "fuente-palabras " href="../html/inicio.html">Iniciar Sesion</a> | <a class = "fuente-palabras"href="../html/registro.html">Registrar Usuario</a>
     </div>
 
     <div class = "container caja-gris">
         <div class = "row">
-            <div class = "col-6 cuadrado-grande" >
+            <div class = "col-6 cuadrado-grande">
                 <h1 class = "fuente-palabras">TIENDA ONLINE</h1>
             <p>Our North American Field Guides provide tips for identifying birds in all of the regions of the United States and Canada. Download any of our guides for free now!</p>
             <div class="contenedor-boton">  
-                <button type="button" class="btn btn-secondary" style="background-color: #007bff; border-color: #007bff;">IR A PRODUCTO</button>
+                <button type="button" class="btn btn-secondary boton-colores-inicio">IR A PRODUCTO</button>
             </div>
             </div>
             <div class = "col-6" style="text-align: center;">
@@ -213,29 +211,29 @@
     </div>
 </body>
 
-<footer style ="background-color: rgb(255, 255, 255); border-top: 3px solid rgb(0, 0, 0); padding-top: 20px">
+<footer class = "footer-estilo">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 columna-izq-footer">
             <div class="enlaces-footer">
-                <span class="nombre-sitio">TIENDA</span>
-                <a href="#">Category X</a> | 
-                <a href="#">Category Y</a> | 
-                <a href="#">Category Z</a>
+                <span class="nombre-sitio p-2 fuente-palabras-slim">ESR Industries</span>
+                <a class="fuente-palabras-slim" href="#">Category 1</a> | 
+                <a class="fuente-palabras-slim" href="#">Category 2</a> | 
+                <a class="fuente-palabras-slim" href="#">Category 3</a>
             </div>
             
             <div>
-                <span class="tarjeta">VISA</span>
-                <span class="tarjeta">MC</span>
-                <span class="tarjeta">AMEX</span>
+                <span class="tarjeta fuente-palabras-slim">VISA</span>
+                <span class="tarjeta fuente-palabras-slim">MC</span>
+                <span class="tarjeta fuente-palabras-slim">AMEX</span>
             </div>
         </div>
         <div class="col-12 col-md-6 columna-der-footer">
-            <p>Stay In Touch! Join our Newsletter:</p>
+            <p class = "fuente-palabras-slim" style="padding-right: 20px" >Stay In Touch! Join our Newsletter:</p>
             
             <form>
                 <input type="email" placeholder="Enter Email" required>
-                <button class="btn btn-primary" style="border-radius: 2px; padding: 6px 15px; margin-bottom: 10px;" type="submit">Subscribe</button>
+                <button class="btn btn-primary boton-footer" type="submit">Subscribe</button>
             </form>
         </div>
         </div>
