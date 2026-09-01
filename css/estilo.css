@@ -1,14 +1,41 @@
 .fondo-color{
-    background-color: gray;
+    background-color: #4c5844;
 }
 
 .navbar-estilo{
-    border-bottom: 3px solid black;
+    background-color: #3f4738 !important;
+    border-bottom: 5px solid #968732;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .fuente-palabras{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    color: #eff6ee;
+}
+
+.menu-letras{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #eff6ee;
+}
+
+.menu-letras:hover{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #cacaca;
+}
+.menu-letras:active{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: light;
+    color: #ffffff;
+}
+
+.menu-letras:focus{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #a5a5a5;
 }
 
 .movimiento-inicio-sesion{
@@ -17,14 +44,14 @@
 }
 
 .caja-gris{
-    background-color: rgb(243, 243, 243);
+    background-color: #3f4738;
     padding: 30px;
     border-radius: 2px;
     margin-top: 10px;
 }
 
 .caja-peque{
-    background-color: white; 
+    background-color: #3f4738; 
     border: 1px;
     padding: 20px;
     height: 240px; 
@@ -122,4 +149,12 @@
     border: 3px solid #015dbe; 
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.boton-contacto{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: contents;
+    border: 3px solid black;
 }
