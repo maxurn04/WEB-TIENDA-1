@@ -10,10 +10,10 @@ document.getElementById('f-login').addEventListener('submit', function(e) {
         user.correo.toLowerCase() === correoIngresado && user.contra === passwIngresada
     );
 
-    if (usuarioE) {
+    if (usuarioEncontrado) {
         localStorage.setItem('usuario_activo', JSON.stringify(usuarioEncontrado));
 
-        alert(`¡Bienvenido de nuevo, ${usuarioE.nombre}!`);
+        alert(`¡Bienvenido de nuevo, ${usuarioEncontrado.nombre}!`);
 
         window.location.href = 'index.html'; 
     }else{
