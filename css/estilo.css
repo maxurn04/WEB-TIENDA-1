@@ -1,10 +1,11 @@
 .fondo-color{
-    background-color: #4c5844;
+    background-image: url("../img/bf-degra.svg");
+    background-size: cover;
 }
 
 .navbar-estilo{
     background-color: #3f4738 !important;
-    border-bottom: 5px solid #968732;
+    border-bottom: 5px solid #bca624;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -39,14 +40,16 @@
 }
 
 .movimiento-inicio-sesion{
+    color: #bca624;
     text-align: right;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .caja-gris{
     background-color: #3f4738;
     padding: 30px;
-    border-radius: 2px;
+    border-radius: 20px;
     margin-top: 10px;
 }
 
@@ -57,6 +60,7 @@
     height: 240px; 
     text-align: center;
     margin-bottom: 35px;
+    border-radius: 30px;
 }
 
 .cuadrado-grande{
@@ -81,6 +85,7 @@
 .fuente-palabras-slim{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
+    color: white;
 }
 
 .enlaces-footer{
@@ -88,9 +93,11 @@
 }
 
 .footer-estilo{
-    background-color: rgb(255, 255, 255);
-     border-top: 3px solid rgb(0, 0, 0); 
-     padding-top: 20px
+    background-color: #4c5844;
+    border-top: 3px solid #968732; 
+    padding-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .boton-footer{
@@ -151,10 +158,15 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 .boton-contacto{
     padding-left: 100px;
     padding-right: 100px;
     display: contents;
     border: 3px solid black;
+}
+
+.imagen-ajustada{
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; 
 }
