@@ -10,6 +10,26 @@
     border-bottom-right-radius: 25px;
 }
 
+.imagen-productos{
+    max-width: 100%; 
+    height: 150px; 
+    border-radius: 10px; 
+    object-fit: cover;
+}
+
+.imagen-productos-grande{
+    max-width: 100%; 
+    height: 350px; 
+    border-radius: 15px; 
+    object-fit: cover;
+}
+.linea-separacion{
+    border-top: 2px solid #ccc;
+    border-radius: 1px;
+    opacity: 1;
+    margin: 10px 0; 
+    padding-bottom: 20px;
+}
 .fuente-palabras{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -157,7 +177,10 @@
     background-color: #303030;
     color: #ffffff;
 }
-
+.carrito-estilo{
+    width: 25px; 
+    margin-right: 5px;
+}
 .boton-colores-inicio{
     background-color: #007bff;
     border: 3px solid #015dbe; 
