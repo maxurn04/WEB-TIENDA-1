@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="fondo-color">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-estilo">
+    <div class="container-fluid">
+        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/ejemploemplesa.png" alt="imgEmpresa" class="img-fluid" style="width: 105px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle menu-letras" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+                </a>
+            
+            <ul class="dropdown-menu" style="background-color: #6b795f;">
+                <li><a class="dropdown-item fuente-palabras" href="../html/index.html">Home</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/productos.html">Productos</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/blogs.html">Blogs</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </ul>
+
+    <div class="align-items-center">
+        <a href="../html/carrito.html" class="btn">
+        
+            <img src="../img/carrito.svg" alt="Icono Carro" class = "img-fluid" style="width: 25px; margin-right: 5px;">
+        
+            <span class="fuente-palabras">CARRO</span>
+            <span id="contador-carrito" class="ms-2 fuente-palabras">0</span>
+        </a>
+    </div>
+    <div class="d-flex align-items-center">
+        </div>
+    </div>
+    </nav>
+
+
+<article>
+    <div class="container mt-5">
+        <h2 class="fuente-palabras mb-4">Accesorios disponibles</h2>
+        <div id="grilla-productos" class="row g-4 mb-5">
+
+        </div>
+    </div>
+</article>
+
+    <script src="../js/catalogo-accesorios.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/actualizarCarrito.js"></script>
+</body>
+</html>

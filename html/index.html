@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Principal</title>
+    <title>Retro Vault</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilo.css">
@@ -28,7 +28,6 @@
                 <li><a class="dropdown-item fuente-palabras" href="../html/nosotros.html">Nosotros</a></li>
                 <li><a class="dropdown-item fuente-palabras" href="../html/blogs.html">Blogs</a></li>
                 <li><a class="dropdown-item fuente-palabras" href="../html/contacto.html">Contacto</a></li>
-
             </ul>
         </ul>
 
@@ -38,18 +37,28 @@
             <img src="../img/carrito.svg" alt="Icono Carro" class = "img-fluid" style="width: 25px; margin-right: 5px;">
         
             <span class="fuente-palabras">CARRO</span>
-            <span class=" ms-2 fuente-palabras">0</span>
+            <span id="contador-carrito" class="ms-2 fuente-palabras">0</span>
         </a>
     </div>
+    <div class="d-flex align-items-center">
         </div>
     </div>
     </nav>
 
     <article>
-        <div class="movimiento-inicio-sesion container">
-            <a class = "fuente-palabras" href="../html/inicio.html">Iniciar Sesion</a> | 
+        <div class="movimiento-inicio-sesion container" id="menu-invitado">
+            <a class = "fuente-palabras" href="../html/inicio.html">Iniciar Sesión</a> | 
             <a class = "fuente-palabras " href="../html/registro.html">Registrar Usuario</a>
         </div>
+
+    <div id="menu-usuario" class="movimiento-inicio-sesion container">
+        <span class="text-white fuente-palabras">
+            <p style="font-size: 20px">Bienvenido <strong id="nombre-usuario" class = "fuente-palabras"></strong>!</p>
+        </span>
+        <a href="#" id="btn-cerrar-sesion" class="fuente-palabras"> Cerrar Sesión</a>
+    </div>
+
+</div>
 
         <div class = "container p-1">
             <img src="../img/RV.gif" alt="Retro Vault" class = "img-fluid">
@@ -107,7 +116,7 @@
     
     <div class="container mt-5">
         <div class = "row ">
-            <h2 class = "fuente-palabras">Consolas <a class ="fuente-palabras" style = "color: #bca624; font-size: 90%;" href="../html/productos.html"> Ver mas...</a></h2>
+            <h2 class = "fuente-palabras">Consolas <a class ="fuente-palabras" style = "color: #bca624; font-size: 90%;" href="../html/productos-cons-jueg.html"> Ver mas...</a></h2>
             <div class = "col-12 col-sm-6 col-lg-3 mb-4">
                 <div class = "caja-peque">
                     <div>
@@ -185,7 +194,7 @@
         <hr style="border-top: 2px solid #bca624; border-radius: 1px; opacity: 1; margin: 5px 0; padding-bottom: 50px; padding-top: 10px;">
         </div>
         <div class = "row">
-            <h2 class = "fuente-palabras">Accesorios destacados  <a class ="fuente-palabras" style = "color: #bca624; font-size: 90%;" href="../html/productos.html"> Ver mas...</a></h2>
+            <h2 class = "fuente-palabras">Accesorios destacados  <a class ="fuente-palabras" style = "color: #bca624; font-size: 90%;" href="../html/productos-accesorios.html"> Ver mas...</a></h2>
             <div class = "col-12 col-sm-6 col-lg-3 mb-4">
                 <div class = "caja-peque">
                     <div>
@@ -261,6 +270,9 @@
         </div>
         
     </div>
+
+<script src="../js/home.js"></script>
+<script src="../js/actualizarCarrito.js"></script>
 </body>
 
 <footer class = "footer-estilo">

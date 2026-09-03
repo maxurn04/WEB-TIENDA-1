@@ -94,7 +94,7 @@
 
 .footer-estilo{
     background-color: #4c5844;
-    border-top: 3px solid #968732; 
+    border-top: 3px solid #bca624; 
     padding-top: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -176,4 +176,9 @@
   max-width: 100%;
   height: auto;
   object-fit: contain; 
+}
+
+.click-efecto{
+    color: #bca624;
+    cursor: pointer;
 }

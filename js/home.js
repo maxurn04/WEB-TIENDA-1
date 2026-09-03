@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     if (btnCerrarSesion) {
-        btnCerrarSesion.addEventListener('click', function(e) {
+        btnCerrarSesion.addEventListener('click', function(e){
             e.preventDefault();
             localStorage.removeItem('usuario_activo'); 
             window.location.reload(); 
