@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="fondo-color">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-estilo">
+    <div class="container-fluid">
+        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/ejemploemplesa.png" alt="imgEmpresa" class="img-fluid" style="width: 105px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle menu-letras" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+                </a>
+            
+            <ul class="dropdown-menu" style="background-color: #6b795f;">
+                <li><a class="dropdown-item fuente-palabras" href="../html/index.html">Home</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/productos.html">Productos</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/blogs.html">Blogs</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </ul>
+
+    <div class="align-items-center">
+        <a href="../html/carrito.html" class="btn">
+        
+            <img src="../img/carrito.svg" alt="Icono Carro" class = "img-fluid carrito-estilo">
+        
+            <span class="fuente-palabras">CARRO</span>
+            <span id="contador-carrito" class="ms-2 fuente-palabras">0</span>
+        </a>
+    </div>
+    <div class="d-flex align-items-center">
+        </div>
+    </div>
+    </nav>
+<div class="container mt-5 mb-5 fuente-palabras-slim">
+
+    <div class="mb-3"> 
+        <a href="../html/index.html" class="text-decoration-none fuente-palabras click-efecto">Inicio</a> /
+        <a href="../html/productos.html" class="text-decoration-none fuente-palabras click-efecto">Productos</a> /
+        <span id="nombre-producto" class="fuente-palabras"> ... </span>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6 mb-4">
+            <div class="caja-gris text-center" style="padding: 10px; ">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img id="detalle-img" src="" class="d-block w-100 img-fluid imagen-productos-grande">
+                    </div>
+                    
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img id="detalle-img2" src="" class="d-block w-100 img-fluid imagen-productos-grande">
+                    </div>
+                    
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img id="detalle-img3" src="" class="d-block w-100 img-fluid imagen-productos-grande">
+                    </div>
+                    
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+                <img id="" src="" alt="" class="img-fluid rounded" style="max-height: 400px; object-fit: cover;">
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h1 id="detalle-nombre" class="fuente-palabras" style="color: #bca624;">Cargando...</h1>
+                <h2 id="detalle-precio" class="fuente-palabras">CLP$?</h2>
+            </div>
+            
+            <hr class="linea-separacion" style = "border-color: #bca624;">
+            <p id="detalle-desc" class="mt-4 mb-4" style="line-height: 1.6; text-align: justify;">
+                Cargando descripción del producto...
+            </p>
+            
+            <!-- Selector de Cantidad y Botón -->
+            <div class="d-flex align-items-center mb-4 mt-5">
+                <label for="detalle-cantidad" class="me-3 fuente-palabras">Cantidad:</label>
+                <input type="number" id="detalle-cantidad" class="form-control text-center" value="1" min="1" style="width: 80px; background-color: #3f4738; color: white; border: 1px solid #bca624;">
+            </div>
+            
+            <button id="btn-agregar-detalle" class="btn w-100 fuente-palabras fs-5 text-dark" style="background-color: #bca624; font-weight: bold; padding: 15px;">
+                Añadir al carrito
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="../js/actualizarCarrito.js"></script>
+<script src="../js/catalogo.js"></script>
+<script src="../js/detalleprod.js"></script>
+</body>
+</html>
