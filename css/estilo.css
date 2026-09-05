@@ -206,3 +206,35 @@
     color: #bca624;
     cursor: pointer;
 }
+
+
+.sidebaradmin{
+    width: 250px;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenidoadminhome{
+    margin-left: 250px;
+    min-height: 100vh;
+}
+
+.nav-admin{
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.navadministrador:hover, 
+    .nav-linkadmin.active {
+      color: #0d6efd;
+      background-color: #e2e6ea;
+      border-radius: 4px;
+    }
