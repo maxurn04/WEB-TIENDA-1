@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const menuUsuario = document.getElementById('menu-usuario');
     const spanNombre = document.getElementById('nombre-usuario');
     const btnCerrarSesion = document.getElementById('btn-cerrar-sesion');
-    const btnCerrarSesionAdmin = document.getElementById('btn-cerrar-sesion');
+    const btnCerrarSesionAdmin = document.getElementById('btn-cerrar-sesion-adm');
 
     if (usuarioActivo) {
         if (menuInvitado) menuInvitado.style.display = 'none'; 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         btnCerrarSesion.addEventListener('click', function(e){
             e.preventDefault();
             localStorage.removeItem('usuario_activo'); 
-            window.location.href = '../index.html';
+            window.location.href = '../html/index.html';
         });
     }
 });

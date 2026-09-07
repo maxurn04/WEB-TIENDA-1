@@ -49,7 +49,7 @@ document.getElementById('f-login').addEventListener('submit', function(e) {
 
         alert("¡Bienvenido, " + usuarioEncontrado.nombre + "!");
 
-        window.location.href = '../index.html'; 
+        window.location.href = '../html/index.html'; 
     } else {
         alert("Correo o contraseña incorrectos.");
     }
