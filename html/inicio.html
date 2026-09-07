@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,9 @@
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-estilo">
     <div class="container-fluid">
-        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/logoRV.jpg" alt="imgEmpresa" class="img-fluid" style="width: 80px; border-radius: 30px; border: 2px solid #6b795f;"></a>
+        <a class="navbar-brand fuente-palabras"  href="../html/index.html">
+            <img src="../img/logoRV.jpg" alt="imgEmpresa" class="img-fluid logo-nav">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,22 +26,21 @@
                 Menú
                 </a>
             
-            <ul class="dropdown-menu" style="background-color: #6b795f;">
+            <ul class="dropdown-menu fondo-menu-desplegable">
                 <li><a class="dropdown-item fuente-palabras" href="../html/index.html">Home</a></li>
                 <li><a class="dropdown-item fuente-palabras" href="../html/productos.html">Productos</a></li>
                 <li><a class="dropdown-item fuente-palabras" href="../html/nosotros.html">Nosotros</a></li>
                 <li><a class="dropdown-item fuente-palabras" href="../html/blogs.html">Blogs</a></li>
                 <li><a class="dropdown-item fuente-palabras" href="../html/contacto.html">Contacto</a></li>
-
             </ul>
         </ul>
         </div>
     </div>
     </nav>
     
-    <div class = "container mt-5">
-        <div class="text-align:center">
-            <img src="../img/logoRV-NF.png" alt="imgEmpresa" class="img-fluid"; style="max-width: 20%; height: auto; display: block; margin: auto;">
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="../img/logoRV-NF.png" alt="imgEmpresa" class="img-fluid logo-inicio-sesion">
         </div>
     </div>
 
@@ -47,26 +48,27 @@
         <div class="row">
         <div class="col-10 col-md-6 mx-auto p-4 caja-gris">
             <div>
-            <div style="background-color: #ccc; margin-bottom: 20px; padding: 10px;">
+            <div class="cabeza-formulario-gris">
                 <h5 class="mb-0">Inicio de sesion</h5>
             </div>
-            <form id = "f-login">
+            <form id="f-login">
                 <div class="mb-3">
                     <label class="form-label mb-1">CORREO</label>
-                    <input type="email" id = "login-correo" class="form-control border-dark" required>
+                    <input type="email" id="login-correo" class="form-control border-dark" maxlength="100" required>
                 </div>
                 
                 <div class="mb-3">
-                    <label class="form-label  mb-1">CONTRASEÑA</label>
-                    <input type="password" id = "login-passw" class="form-control border-dark" required>
+                    <label class="form-label mb-1">CONTRASEÑA</label>
+                    <input type="password" id="login-passw" class="form-control border-dark" minlength="4" maxlength="10" required>
                 </div>
                 
                 <div class="text-center mt-3 pt-4">
-                    <button type="submit"  class="btn boton-reini">INICIAR SESIÓN</button>
+                    <button type="submit" class="btn boton-reini">INICIAR SESIÓN</button>
                 </div>
             </form>
 
         </div>
+    </div>
     </div>
     </div>
 

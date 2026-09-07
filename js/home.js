@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const menuUsuario = document.getElementById('menu-usuario');
     const spanNombre = document.getElementById('nombre-usuario');
     const btnCerrarSesion = document.getElementById('btn-cerrar-sesion');
+    const btnCerrarSesionAdmin = document.getElementById('btn-cerrar-sesion');
 
     if (usuarioActivo) {
         if (menuInvitado) menuInvitado.style.display = 'none'; 
@@ -22,6 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
             localStorage.removeItem('usuario_activo'); 
             window.location.reload(); 
+        });
+    }
+    if (btnCerrarSesionAdmin) {
+        btnCerrarSesion.addEventListener('click', function(e){
+            e.preventDefault();
+            localStorage.removeItem('usuario_activo'); 
+            window.location.href = '../index.html';
         });
     }
 });

@@ -257,6 +257,12 @@
     color: #bca624;
     cursor: pointer;
 }
+.marcar-efecto{
+    color: #bca624; 
+}
+.marcar-efecto:hover{
+    color: rgb(245, 229, 141)
+}
 
 .sidebaradmin{
     width: 250px;
@@ -460,4 +466,17 @@
     background-color: #ffffff;
     color: #3f4738;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo-inicio-sesion {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.cabeza-formulario-gris {
+    background-color: #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
 }

@@ -1,15 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const parametrosURL = new URLSearchParams(window.location.search);
     const idProductoUrl = parseInt(parametrosURL.get('id'));
-    const prod = catalogo.find(item => item.id === idProductoUrl);
+    const catalogoActualizado = JSON.parse(localStorage.getItem('catalogo_retro')) || [];
+    const prod = catalogoActualizado.find(item => item.id === idProductoUrl);
 
     if (prod) {
         document.getElementById('detalle-img').src = prod.img;
         document.getElementById('detalle-img2').src = prod.img2;
         document.getElementById('detalle-img3').src = prod.img3;
+        document.getElementById('codigo-prod').textContent = prod.codigo;
         document.getElementById('detalle-nombre').textContent = prod.nombre;
         document.getElementById('detalle-precio').textContent = `CLP$${prod.precio}`;
         document.getElementById('nombre-producto').textContent = prod.nombre;
+        if (prod.stock <= prod.stockCritico){
+            document.getElementById('stock-producto').innerHTML = `Stock: ${prod.stock} <p class= "fuente-palabras marcar-efecto">¡Quedan pocos!</p>`;
+        }else{
+            document.getElementById('stock-producto').textContent = `Stock: ${prod.stock}`;
+        }
         document.getElementById('detalle-desc').textContent = prod.desc || "No hay descripcion del articulo";
 
         document.getElementById('btn-agregar-detalle').addEventListener('click', () => {const cantidadSeleccionada = parseInt(document.getElementById('detalle-cantidad').value);

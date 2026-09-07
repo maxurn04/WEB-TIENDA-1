@@ -4,8 +4,22 @@ document.getElementById('f-login').addEventListener('submit', function(e) {
     var correoIngresado = document.getElementById('login-correo').value.trim().toLowerCase();
     var passwIngresada = document.getElementById('login-passw').value.trim();
 
-    // CASOS ESPECIALES DE ACCESO ADMINISTRADOR/VENTAS
-    if (correoIngresado === "admin@gmail.com" && passwIngresada === "admin") {
+    if (correoIngresado.length > 100){
+        alert("El correo no puede superar los 100 caracteres. Prueba con otro.")
+        return;
+    }
+    if  ((!correoIngresado.endsWith("@duoc.cl")) && (!correoIngresado.endsWith("@profesor.duoc.cl")) && (!correoIngresado.endsWith("@gmail.com"))){
+        alert("Solo se permiten correos @duoc.cl - @profesor.duoc.cl y @gmail.com. Prueba con otro.")
+        return;
+    }
+
+    if (passwIngresada.length < 4 || passwIngresada.length > 10) {
+        alert("Error: La contraseña debe tener entre 4 y 10 caracteres.");
+        return;
+    }
+
+    //CASOS ESPECIALES DE ACCESO ADMINISTRADOR/VENTAS
+    if (correoIngresado === "admin@gmail.com" && passwIngresada === "admin.2026") {
         var usuarioAdmin = { nombre: "Administrador", correo: "admin@gmail.com", tipo: "Administrador" };
         localStorage.setItem('usuario_activo', JSON.stringify(usuarioAdmin));
         
@@ -14,7 +28,7 @@ document.getElementById('f-login').addEventListener('submit', function(e) {
         return; 
     }
 
-    if (correoIngresado === "vendedor1@gmail.com" && passwIngresada === "vendedor2026") {
+    if (correoIngresado === "vendedor1@gmail.com" && passwIngresada === "vendedorEjemp") {
         var usuarioVendedor = { nombre: "Vendedor", correo: "vendedor1@gmail.com", tipo: "Vendedor" };
         localStorage.setItem('usuario_activo', JSON.stringify(usuarioVendedor));
         
@@ -33,7 +47,7 @@ document.getElementById('f-login').addEventListener('submit', function(e) {
     if (usuarioEncontrado !== undefined) {
         localStorage.setItem('usuario_activo', JSON.stringify(usuarioEncontrado));
 
-        alert("¡Bienvenido de nuevo, " + usuarioEncontrado.nombre + "!");
+        alert("¡Bienvenido, " + usuarioEncontrado.nombre + "!");
 
         window.location.href = '../index.html'; 
     } else {

@@ -12,7 +12,7 @@
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-estilo">
     <div class="container-fluid">
-        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/ejemploemplesa.png" alt="imgEmpresa" class="img-fluid" style="width: 105px;"></a>
+        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/logoRV.jpg" alt="imgEmpresa" class="img-fluid logo-nav"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -94,17 +94,18 @@
             </div>
             
             <hr class="linea-separacion" style = "border-color: #bca624;">
-            <p id="detalle-desc" class="mt-4 mb-4" style="line-height: 1.6; text-align: justify;">
+            <p id="detalle-desc" class="mt-4" style="line-height: 1.6; text-align: justify;">
                 Cargando descripción del producto...
             </p>
+            <p id = "codigo-prod">Cargando codigo producto...</p>
             
-            <!-- Selector de Cantidad y Botón -->
-            <div class="d-flex align-items-center mb-4 mt-5">
+            <div class="d-flex align-items-center mb-4 ">
                 <label for="detalle-cantidad" class="me-3 fuente-palabras">Cantidad:</label>
-                <input type="number" id="detalle-cantidad" class="form-control text-center" value="1" min="1" style="width: 80px; background-color: #3f4738; color: white; border: 1px solid #bca624;">
+                <input type="number" id="detalle-cantidad" class="form-control text-center" value="1" min="1" style="width: 80px; background-color: #3f4738; color: white; border: 1px solid #bca624;"> 
+                <h6 id="stock-producto" class="fuente-palabras-slim ms-auto">Cargando Stock...</h6>
             </div>
             
-            <button id="btn-agregar-detalle" class="btn w-100 fuente-palabras fs-5 text-dark" style="background-color: #bca624; font-weight: bold; padding: 15px;">
+            <button id="btn-agregar-detalle" class="btn w-100 fuente-palabras text-dark" style="background-color: #bca624; font-weight: bold; padding: 18px; font-size: 20px;">
                 Añadir al carrito
             </button>
         </div>
