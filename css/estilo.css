@@ -135,23 +135,30 @@
   display: flex;
   align-items: center; 
   justify-content: center; 
-  height: 400px; 
-  padding: 10%;
+  padding: 2%;
 }
 
 .logoContactoImagen{
-    height: 300px;
-    width: 400px;
+    height: 150px;
+    
 }
 
 .estiloForm{
-    width: 50vw;   
+    width: 90vw;
+    max-width: 1000px;
+    height: 80%;   
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10%;
 
-    background-color: darkgrey;
-    border: 3px solid black ;
+    background-color: #3f4738;
+    border: 3px solid #968732 ;
     padding: 4%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     
 }
 .caja-registro{
