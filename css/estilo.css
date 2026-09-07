@@ -258,7 +258,6 @@
     cursor: pointer;
 }
 
-
 .sidebaradmin{
     width: 250px;
     height: 100vh;
@@ -289,3 +288,176 @@
       background-color: #e2e6ea;
       border-radius: 4px;
     }
+
+    .admin-cuerpo {
+    background-color: #dddddd;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-lateral {
+    background-color: #e0e0e0;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.admin-contenedor-logo {
+    color: #333333;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.admin-img-logo {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.admin-lista-nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.admin-enlace-nav {
+    color: #333333;
+    white-space: nowrap;
+    padding-left: 0;
+}
+
+.admin-contenido-principal {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+
+.admin-titulo-pagina {
+    color: #333333;
+    margin: 0;
+}
+
+.admin-btn-nuevo {
+    background-color: #999999;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.admin-btn-nuevo:hover {
+    background-color: #777777;
+    color: #ffffff;
+}
+
+.admin-caja-tabla {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    overflow-x: auto;
+}
+
+.admin-ancho-tabla {
+    min-width: 600px;
+}
+
+.admin-encabezado-tabla {
+    border-bottom: 2px solid #999999;
+    color: #333333;
+    font-weight: bold;
+}
+
+.admin-fondo-crear {
+    background-color: #f2f2f2;
+}
+
+.admin-caja-formulario {
+    background-color: #fdfdfd;
+    border: 1px solid #cccccc;
+    max-width: 700px;
+}
+
+.admin-titulo-formulario {
+    background-color: #d8d8d8;
+    color: #2b2b2b;
+}
+
+.admin-etiqueta-form {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.admin-btn-registrar {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: bold;
+    border-radius: 0;
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.admin-btn-registrar:hover {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.imagen-nosotros{
+    height: 300PX;
+    border-radius: 100%;
+}
+
+
+.item-faq{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.accordion-button{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #eff6ee;
+    color: #3f4738;
+    border-left: 5px solid #968732;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #3f4738;
+    color: #ffffff;
+    border-left: 5px solid #bca624;
+}
+
+.accordion-button:not(.collapsed) .letra-pregunta{
+    color: #bca624;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+    border-color: #968732;
+}
+
+.accordion-button::after{
+    filter: invert(38%) sepia(15%) saturate(700%) hue-rotate(40deg);
+}
+
+.letra-pregunta{
+    color: #968732;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.letra-respuesta{
+    color: #4c5844;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.accordion-body{
+    background-color: #ffffff;
+    color: #3f4738;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
