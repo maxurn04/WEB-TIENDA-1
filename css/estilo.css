@@ -245,3 +245,63 @@
       background-color: #e2e6ea;
       border-radius: 4px;
     }
+
+.imagen-nosotros{
+    height: 300PX;
+    border-radius: 100%;
+}
+
+
+.item-faq{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.accordion-button{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #eff6ee;
+    color: #3f4738;
+    border-left: 5px solid #968732;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #3f4738;
+    color: #ffffff;
+    border-left: 5px solid #bca624;
+}
+
+.accordion-button:not(.collapsed) .letra-pregunta{
+    color: #bca624;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+    border-color: #968732;
+}
+
+.accordion-button::after{
+    filter: invert(38%) sepia(15%) saturate(700%) hue-rotate(40deg);
+}
+
+.letra-pregunta{
+    color: #968732;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.letra-respuesta{
+    color: #4c5844;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.accordion-body{
+    background-color: #ffffff;
+    color: #3f4738;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
