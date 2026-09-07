@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,69 +8,62 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/estilo.css"> 
 </head>
-<body style="background-color: #ffffff; margin: 0; padding: 0;">
+<body class="admin-cuerpo">
 
     <div class="container-fluid p-0">
-        <!-- Quitamos el min-height de aquí para que el menú no se estire en celular -->
         <div class="row g-0">
 
-            <!-- MENÚ LATERAL (Súper simplificado) -->
-            <aside class="col-12 col-md-3 col-xl-2 p-3" style="background-color: #e0e0e0; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;">
+            <aside class="col-12 col-md-3 col-xl-2 p-3 admin-lateral">
                 
-                <!-- Título / Logo -->
-                <h4 style="color: #333333; border-bottom: 2px solid #cccccc; padding-bottom: 10px; margin-bottom: 15px;">
-                    logo
+                <h4 class="admin-contenedor-logo text-center">
+                    <img src="../../img/logoRV-NF.png" alt="Logo RV" class="img-fluid admin-img-logo">
                 </h4>
 
-                <!-- Lista de enlaces básica -->
-                <ul class="nav flex-row flex-md-column" style="overflow-x: auto; flex-wrap: nowrap;">
+                <ul class="nav flex-row flex-md-column admin-lista-nav">
                     <li class="nav-item">
-                        <a href="../../html/admin/inicioadmin.html" class="nav-link" style="color: #333333; white-space: nowrap; padding-left: 0;">Resumen</a>
+                        <a href="../../html/admin/inicioadmin.html" class="nav-link admin-enlace-nav">Resumen</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../../html/admin/mostrarproductos.html" class="nav-link fw-bold" style="color: #333333; white-space: nowrap; padding-left: 0;">Productos</a>
+                        <a href="../../html/admin/mostrarproductos.html" class="nav-link admin-enlace-nav fw-bold">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" style="color: #333333; white-space: nowrap; padding-left: 0;">Nuevo usuario</a>
+                        <a href="#" class="nav-link admin-enlace-nav">Nuevo usuario</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" style="color: #333333; white-space: nowrap; padding-left: 0;">Editar usuario</a>
+                        <a href="#" class="nav-link admin-enlace-nav">Editar usuario</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" style="color: #333333; white-space: nowrap; padding-left: 0;">Mostrar usuarios</a>
+                        <a href="#" class="nav-link admin-enlace-nav">Mostrar usuarios</a>
                     </li>
                 </ul>
 
             </aside>
 
-            <!-- CONTENIDO PRINCIPAL -->
-            <!-- Aquí sí ponemos el min-height para que el fondo gris cubra hasta abajo -->
-            <main class="col-12 col-md-9 col-xl-10 p-4" style="background-color: #f2f2f2; min-height: 100vh;">
+
+            <main class="col-12 col-md-9 col-xl-10 p-4 admin-contenido-principal">
                 
-                <!-- ENCABEZADO -->
                 <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
-                    <h2 class="fuente-palabras mb-3 mb-md-0" style="color: #333333; margin: 0;">Gestión de Productos</h2>
-                    <a href="crearprod.html" class="btn" style="background-color: #999999; color: #ffffff; font-weight: bold; text-decoration: none;">
+                    <h2 class="fuente-palabras mb-3 mb-md-0 admin-titulo-pagina">Gestión de Productos</h2>
+                    <a href="crearprod.html" class="btn admin-btn-nuevo">
                         + Nuevo Producto
                     </a>
                 </div>
 
-                <!-- ÁREA DE LA LISTA -->
-                <div class="p-4" style="background-color: #e0e0e0; border-radius: 10px; border: 1px solid #cccccc; overflow-x: auto;">
-                    
-                    <div style="min-width: 600px;">
-                        <!-- Fila de Encabezados -->
-                        <div class="row mb-3 pb-2 fuente-palabras" style="border-bottom: 2px solid #999999; color: #333333; font-weight: bold;">
+                <div class="p-4 admin-caja-tabla">
+                    <div class="admin-ancho-tabla">
+                        
+
+                        <div class="row mb-3 pb-2 fuente-palabras admin-encabezado-tabla">
                             <div class="col-1">ID</div>
                             <div class="col-2">Imagen</div>
                             <div class="col-4">Nombre</div>
                             <div class="col-3">Precio</div>
-                            <div class="col-2" style="text-align: center;">Acciones</div>
+                            <div class="col-2 text-center">Acciones</div>
                         </div>
 
                         <div id="tabla-productos-admin"></div>
+                        
                     </div>
-                    
                 </div>
 
             </main>
@@ -78,5 +71,6 @@
     </div>
     
     <script src="../../js/prodsAdmin.js"></script>
+    <script src="../../js/catalogo.js"></script>
 </body>
 </html>

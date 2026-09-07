@@ -11,7 +11,7 @@
 <body class="fondo-color">
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-estilo">
     <div class="container-fluid">
-        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/logoRV.jpg" alt="imgEmpresa" class="img-fluid" style="width: 80px; border-radius: 30px; border: 2px solid #6b795f;"></a>
+        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/logoRV.jpg" alt="imgEmpresa" class="img-fluid logo-nav"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +22,7 @@
                 Menú
                 </a>
             
-            <ul class="dropdown-menu" style="background-color: #6b795f;">
+            <ul class="dropdown-menu fondo-menu-desplegable">
                 <li><a class="dropdown-item fuente-palabras" href="../html/index.html">Home</a></li>
                 <li><a class="dropdown-item fuente-palabras" href="../html/productos.html">Productos</a></li>
                 <li><a class="dropdown-item fuente-palabras" href="../html/nosotros.html">Nosotros</a></li>
@@ -34,7 +34,7 @@
     <div class="align-items-center">
         <a href="../html/carrito.html" class="btn">
         
-            <img src="../img/carrito.svg" alt="Icono Carro" class = "img-fluid" style="width: 25px; margin-right: 5px;">
+            <img src="../img/carrito.svg" alt="Icono Carro" class="img-fluid carrito-estilo">
         
             <span class="fuente-palabras">CARRO</span>
             <span id="contador-carrito" class="ms-2 fuente-palabras">0</span>
@@ -47,26 +47,26 @@
 
     <article>
         <div class="movimiento-inicio-sesion container" id="menu-invitado">
-            <a class = "fuente-palabras" href="../html/inicio.html">Iniciar Sesión</a> | 
-            <a class = "fuente-palabras " href="../html/registro.html">Registrar Usuario</a>
+            <a class="fuente-palabras" href="../html/inicio.html">Iniciar Sesión</a> | 
+            <a class="fuente-palabras" href="../html/registro.html">Registrar Usuario</a>
         </div>
 
     <div id="menu-usuario" class="movimiento-inicio-sesion container">
         <span class="text-white fuente-palabras">
-            <p style="font-size: 20px">Bienvenido <strong id="nombre-usuario" class = "fuente-palabras"></strong>!</p>
+            <p class="texto-bienvenida">Bienvenido <strong id="nombre-usuario" class="fuente-palabras"></strong>!</p>
         </span>
         <a href="#" id="btn-cerrar-sesion" class="fuente-palabras"> Cerrar Sesión</a>
     </div>
 
 </div>
 
-        <div class = "container p-1">
-            <img src="../img/RV.gif" alt="Retro Vault" class = "img-fluid">
-            <p class = "fuente-palabras p-1" style ="margin-bottom: 5px; margin-top: 5px; padding-left: 10px;" > Tu bóveda de nostalgia gamer. Descubre consolas de antaño y vuelve a jugar los títulos que marcaron tu infancia.</p>
+        <div class="container p-1">
+            <img src="../img/RV.gif" alt="Retro Vault" class="img-fluid">
+            <p class="fuente-palabras p-1 texto-descripcion-inicio"> Tu bóveda de nostalgia gamer. Descubre consolas de antaño y vuelve a jugar los títulos que marcaron tu infancia.</p>
         </div>
 
         <div class="container pb-2">
-        <hr class = "linea-separacion">
+        <hr class="linea-separacion">
         </div>
     </article>
 
@@ -74,7 +74,7 @@
     <article>
     <div class="container caja-gris p-3">
     <div class="row">
-            <h2 class = "fuente-palabras text-center " style = "background-color: #3f4738; border-radius: 20px;">Objetos Destacados</h2>
+            <h2 class="fuente-palabras text-center titulo-destacados">Objetos Destacados</h2>
         <div class="col-12 col-md-8 col-lg-6 mx-auto">
             
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -112,17 +112,17 @@
 
 
     <div class="container pt-3">
-        <hr class = "linea-separacion">
+        <hr class="linea-separacion">
         </div>
     
     <div class="container mt-5">
-        <div class = "row ">
-            <h2 class = "fuente-palabras">Consolas <a class ="fuente-palabras" style = "color: #bca624; font-size: 90%;" href="../html/productos-cons-jueg.html"> Ver mas...</a></h2>
-            <div class = "col-12 col-sm-6 col-lg-3 mb-4">
-                <div class = "caja-peque">
+        <div class="row">
+            <h2 class="fuente-palabras">Consolas <a class="fuente-palabras enlace-ver-mas" href="../html/productos-cons-jueg.html"> Ver mas...</a></h2>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="caja-peque">
                     <div>
-                        <img src="../img/ps2.jpg" alt="ps2" class = "img-fluid imagen-productos">
-                        <p class = "fuente-palabras"; style = "padding-top: 7px; font-size: 12px;">PLAYSTATION 2</p>
+                        <img src="../img/ps2.jpg" alt="ps2" class="img-fluid imagen-productos">
+                        <p class="fuente-palabras titulo-producto-tarjeta">PLAYSTATION 2</p>
                     </div>
                     <div class="container mt-3">  
                         <div class="row">
@@ -136,11 +136,11 @@
                 </div>
                 </div>
             </div>
-            <div class = "col-12 col-sm-6 col-lg-3 mb-4">
-                <div class = "caja-peque">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="caja-peque">
                     <div>
-                        <img src="../img/ps3.jpg" alt="ps3" class = "img-fluid imagen-productos">
-                        <p class = "fuente-palabras"; style = "padding-top: 7px; font-size: 12px;">PLAYSTATION 3</p>
+                        <img src="../img/ps3.jpg" alt="ps3" class="img-fluid imagen-productos">
+                        <p class="fuente-palabras titulo-producto-tarjeta">PLAYSTATION 3</p>
                     </div>
                     <div class="container mt-3">  
                         <div class="row">
@@ -154,11 +154,11 @@
                 </div>
                 </div>
             </div>
-            <div class = "col-12 col-sm-6 col-lg-3 mb-4">
-                <div class = "caja-peque">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="caja-peque">
                     <div>
-                        <img src="../img/zeebo.jpeg" alt="zeebo" class = "img-fluid imagen-productos">
-                        <p class = "fuente-palabras"; style = "padding-top: 7px; font-size: 12px;">ZEEBO</p>
+                        <img src="../img/zeebo.jpeg" alt="zeebo" class="img-fluid imagen-productos">
+                        <p class="fuente-palabras titulo-producto-tarjeta">ZEEBO</p>
                     </div>
                     <div class="container mt-3">  
                         <div class="row">
@@ -172,11 +172,11 @@
                 </div>
                 </div>
             </div>
-            <div class = "col-12 col-sm-6 col-lg-3 mb-4">
-                <div class = "caja-peque">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="caja-peque">
                     <div>
-                        <img src="../img/gamecub.jpg" alt="bolso ejemplo" class = "img-fluid imagen-productos">
-                        <p class = "fuente-palabras"; style = "padding-top: 7px; font-size: 12px;">GAMECUBE</p>
+                        <img src="../img/gamecub.jpg" alt="bolso ejemplo" class="img-fluid imagen-productos">
+                        <p class="fuente-palabras titulo-producto-tarjeta">GAMECUBE</p>
                     </div>
                     <div class="container mt-3">  
                         <div class="row">
@@ -192,15 +192,15 @@
             </div>
         </div>
         <div class="container pt-3">
-        <hr class = "linea-separacion" style="border-top: 2px solid #bca624;">
+        <hr class="linea-separacion linea-separacion-dorada">
         </div>
-        <div class = "row">
-            <h2 class = "fuente-palabras">Accesorios destacados  <a class ="fuente-palabras" style = "color: #bca624; font-size: 90%;" href="../html/productos-accesorios.html"> Ver mas...</a></h2>
-            <div class = "col-12 col-sm-6 col-lg-3 mb-4">
-                <div class = "caja-peque">
+        <div class="row">
+            <h2 class="fuente-palabras">Accesorios destacados  <a class="fuente-palabras enlace-ver-mas" href="../html/productos-accesorios.html"> Ver mas...</a></h2>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="caja-peque">
                     <div>
-                        <img src="../img/bolsoEjemplo.webp" alt="bolso ejemplo" class = "img-fluid imagen-productos">
-                        <p class = "fuente-palabras"; style = "padding-top: 7px; font-size: 12px;">CARTERA CARTIER</p>
+                        <img src="../img/bolsoEjemplo.webp" alt="bolso ejemplo" class="img-fluid imagen-productos">
+                        <p class="fuente-palabras titulo-producto-tarjeta">CARTERA CARTIER</p>
                     </div>
                     <div class="container mt-3">  
                         <div class="row">
@@ -214,11 +214,11 @@
                 </div>
                 </div>
             </div>
-            <div class = "col-12 col-sm-6 col-lg-3 mb-4">
-                <div class = "caja-peque">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="caja-peque">
                     <div>
-                        <img src="../img/bolsoEjemplo.webp" alt="bolso ejemplo" class = "img-fluid imagen-productos">
-                        <p class = "fuente-palabras"; style = "padding-top: 7px; font-size: 12px;">CARTERA CARTIER</p>
+                        <img src="../img/bolsoEjemplo.webp" alt="bolso ejemplo" class="img-fluid imagen-productos">
+                        <p class="fuente-palabras titulo-producto-tarjeta">CARTERA CARTIER</p>
                     </div>
                     <div class="container mt-3">  
                         <div class="row">
@@ -232,11 +232,11 @@
                 </div>
                 </div>
             </div>
-            <div class = "col-12 col-sm-6 col-lg-3 mb-4">
-                <div class = "caja-peque">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="caja-peque">
                     <div>
-                        <img src="../img/bolsoEjemplo.webp" alt="bolso ejemplo" class = "img-fluid imagen-productos">
-                        <p class = "fuente-palabras"; style = "padding-top: 7px; font-size: 12px;">CARTERA CARTIER</p>
+                        <img src="../img/bolsoEjemplo.webp" alt="bolso ejemplo" class="img-fluid imagen-productos">
+                        <p class="fuente-palabras titulo-producto-tarjeta">CARTERA CARTIER</p>
                     </div>
                     <div class="container mt-3">  
                         <div class="row">
@@ -250,11 +250,11 @@
                 </div>
                 </div>
             </div>
-            <div class = "col-12 col-sm-6 col-lg-3 mb-4">
-                <div class = "caja-peque">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="caja-peque">
                     <div>
-                        <img src="../img/bolsoEjemplo.webp" alt="bolso ejemplo" class = "img-fluid imagen-productos">
-                        <p class = "fuente-palabras"; style = "padding-top: 7px; font-size: 12px;">CARTERA CARTIER</p>
+                        <img src="../img/bolsoEjemplo.webp" alt="bolso ejemplo" class="img-fluid imagen-productos">
+                        <p class="fuente-palabras titulo-producto-tarjeta">CARTERA CARTIER</p>
                     </div>
                     <div class="container mt-3">  
                         <div class="row">
@@ -276,7 +276,7 @@
 <script src="../js/actualizarCarrito.js"></script>
 </body>
 
-<footer class = "footer-estilo">
+<footer class="footer-estilo">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 columna-izq-footer">
@@ -291,7 +291,7 @@
             </div>
         </div>
         <div class="col-12 col-md-6 columna-der-footer">
-            <p class = "fuente-palabras-slim" style="padding-right: 20px" >Quieres recibir ofertas en tu mail?</p>
+            <p class="fuente-palabras-slim texto-footer-ofertas">Quieres recibir ofertas en tu mail?</p>
             
             <form>
                 <input type="email" placeholder="Ingresa Email" required>
