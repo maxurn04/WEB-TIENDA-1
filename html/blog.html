@@ -9,31 +9,41 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="fondo-color">
-    <nav class="navbar navbar-expand-lg navbar-estilo">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-estilo">
     <div class="container-fluid">
-        <a class="navbar-brand fuente-palabras" style="font-family: comic sans ms; font-weight:bolder" href="../html/index.html">TIENDA</a>
+        <a class="navbar-brand fuente-palabras"  href="../html/index.html"><img src="../img/logoRV.jpg" alt="imgEmpresa" class="img-fluid logo-nav"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link menu-letras active" aria-current="page" href="#">Home</a>
-            </li>
             <li class="nav-item dropdown">
-            <a class="nav-link menu-letras dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle menu-letras" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Menú
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../html/index.html">Home</a></li>
-                <li><a class="dropdown-item" href="../html/productos.html">Productos</a></li>
-                <li><a class="dropdown-item" href="../html/nosotros.html">Nosotros</a></li>
-                <li><a class="dropdown-item" href="../html/blog.html">Blogs</a></li>
-                <li><a class="dropdown-item" href="../html/contacto.html">Contacto</a></li>
+                </a>
+            
+            <ul class="dropdown-menu fondo-menu-desplegable">
+                <li><a class="dropdown-item fuente-palabras" href="../html/index.html">Home</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/productos.html">Productos</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/blog.html">Blogs</a></li>
+                <li><a class="dropdown-item fuente-palabras" href="../html/contacto.html">Contacto</a></li>
             </ul>
         </ul>
+
+    <div class="align-items-center">
+        <a href="../html/carrito.html" class="btn">
+        
+            <img src="../img/carrito.svg" alt="Icono Carro" class="img-fluid carrito-estilo">
+        
+            <span class="fuente-palabras">CARRO</span>
+            <span id="contador-carrito" class="ms-2 fuente-palabras">0</span>
+        </a>
     </div>
-</nav>
+    <div class="d-flex align-items-center">
+        </div>
+    </div>
+    </nav>
 
     <div class="container my-5">
         <h1 class="text-center fuente-palabras" style="color:#3f4738;">Blogs RetroVault</h1>
@@ -92,9 +102,29 @@
     </div>
 
 </body>
-</html>
-
+<footer class="footer-estilo">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 columna-izq-footer">
+            <div class="enlaces-footer">
+                <span class="nombre-sitio p-2 fuente-palabras-slim">Retro Vault 2026</span>
+            </div>
+            
+            <div>
+                <img src="../img/Visa-Logo.png" alt="Visa" height="40" class="me-2"> | 
+                <img src="../img/MasterCard_Logo.webp" alt="Mastercard" height="40" class="me-2"> | 
+                <img src="../img/mercado-pago-1.svg" alt="Mercado Pago" height="40"> 
+            </div>
+        </div>
+        <div class="col-12 col-md-6 columna-der-footer">
+            <p class="fuente-palabras-slim texto-footer-ofertas">Quieres recibir ofertas en tu mail?</p>
+            
+            <form>
+                <input type="email" placeholder="Ingresa Email" required>
+                <button class="btn btn-primary boton-footer" type="submit">Unete</button>
+            </form>
+        </div>
+        </div>
     </div>
-
-</body>
+</footer>
 </html>
