@@ -1,6 +1,6 @@
 var catalogo = JSON.parse(localStorage.getItem('catalogo_retro'));
 
-//if (catalogo === null) {
+if (catalogo === null) {
         catalogo = [
             { id: 1, codigo: "BAR000001", nombre: "PlayStation 2", precio: 100000, stock: 4, stockCritico: 2, img: "../img/ps2.jpg", img2: "../img/ps2-2.jpg", categoria: "Consolas", desc:"La PlayStation 2 (PS2) es una consola de videojuegos de sexta generación desarrollada por Sony Computer Entertainment. Fue lanzada en marzo de 2000 y se convirtió en una de las consolas más exitosas de todos los tiempos, con una amplia biblioteca de juegos y compatibilidad con juegos de la PlayStation original."},
             { id: 2, codigo: "BAR000002", nombre: "Zelda 64", precio: 30000, stock: 5, stockCritico: 2, img: "../img/zelda64.webp", img2: "../img/zelda64-2.jpg",img3: "../img/zelda64-3.jpg", categoria: "Juegos", desc:"Zelda 64 es un videojuego de acción y aventura desarrollado por Nintendo. Fue lanzado en 1998 para la Nintendo 64 y se considera uno de los mejores juegos de la serie."},
@@ -19,7 +19,7 @@ var catalogo = JSON.parse(localStorage.getItem('catalogo_retro'));
     
     
     localStorage.setItem('catalogo_retro', JSON.stringify(catalogo));
-//}
+}
 function renderizarProductos() {
     var conte = document.getElementById('productos-tod');
     
